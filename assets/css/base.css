@@ -5,7 +5,7 @@
 }
 @font-face {
     font-family: 'Noto';
-    src: url(../font/NotoSans-Light.ttf);
+    src: url(../font/NotoSans-Regular.ttf);
 }
 *{
     box-sizing: inherit;
@@ -20,21 +20,19 @@ html{
 }
 
 .grid{
-    width: 1200px;
+    width: 60%;
     max-width: 100%;
     margin:0 auto;
 }
 .col-left{
-    width: 18.5%;
+    width: 20%;
+    float: left;
 }
 .col-right{
-    width: 19%;
+    width: 20%;
+    float: left;
 }
 .grid__full-width{
     width: 100%;
 }
 
-.grid__grow{
-    display: flex;
-    flex-wrap: wrap;
-}
