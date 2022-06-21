@@ -1,0 +1,281 @@
+.detail_first {
+    background-color: #ffffff;
+    color: #464646;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 30px 0px 0px;
+    text-align: left;
+  }
+  .detail_first-content {
+    padding-top: 30px;
+    display: flex;
+    max-height: 381px;
+    flex-wrap: none;
+    wrap: none;
+  }
+  .detail_first-left {
+    display: inline-block;
+    padding-bottom: 51px;
+    margin-right: 75px;
+  }
+  .detail_first-right {
+    display: block;
+    width: 645px;
+    color: #252525;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0px 0px 15px;
+    text-align: left;
+    flex-wrap: none;
+    white-space: nowrap;
+  }
+  
+  .detail_first-right_info--link a {
+    color: #187caa;
+    display: block;
+    font-family: "Noto Sans";
+    font-size: 13px;
+    line-height: 19.5px;
+    text-align: left;
+    flex-wrap: none;
+  }
+  .detail_first-right_info--type {
+    color: #959595;
+    font-size: 11px;
+    line-height: 16.5px;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 18px;
+  }
+  .detail_first-right_info--name {
+    color: #464646;
+    font-family: "Noto Sans";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    margin: 0px 0px 4px;
+    text-align: left;
+  }
+  .detail_first-right_info--address {
+    color: #252525;
+    font-size: 13px;
+    line-height: 19.5px;
+    margin: 0px 0px 2px;
+    text-align: left;
+    padding-top: 4px;
+  }
+  .detail_first-right_info--star {
+    color: #252525;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    justify-content: flex-start;
+    line-height: 21px;
+    margin: 0px 0px 4px;
+    text-align: left;
+  }
+  .number-rating {
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0px 5px;
+    padding: 0px 5px;
+    text-align: left;
+    background-color: #e7c63f;
+    padding-top: 4px;
+  }
+  
+  .detail_first-right_info--star-more a {
+    color: #015785;
+    display: inline;
+    font-family: Noto Sans;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+  }
+  
+  .dot {
+    height: 5px;
+    width: 5px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: inline-block;
+    background-color: green;
+  }
+  .detail_first-right_info--opening--status {
+    color: #329900;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+  }
+  .detail_first-right_info--opening--time i {
+    color: #959595;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    margin: 0px 3px 0px 0px;
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+  }
+  .detail_first-right_info--opening--time span {
+    color: #252525;
+    display: inline-block;
+    font-size: 15px;
+    line-heightt: 22.5px;
+    text-align: left;
+  }
+  .detail_first-right_info--opening {
+    display: flex;
+    padding-top: 4px;
+  }
+  .detail_first-right_info--cost {
+    padding-top: 4px;
+    color: #959595;
+    font-size: 15px;
+    line-height: 22.5px;
+    text-align: left;
+    padding-bottom: 31px;
+  }
+  .detail_first-right_company {
+    display: flex;
+    border-top: 1px solid #ebebeb;
+  }
+  .detail_first-right_company-fee {
+    color: #959595;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0px 0px 30px;
+    padding: 10px 10px 10px 0px;
+    text-align: left;
+    position: relative;
+  }
+  .detail_first-right_company-fee::after {
+    content: "";
+    position: absolute;
+    background-color: #ebebeb;
+    width: 1px;
+    height: 20px;
+    /* bottom: 0; */
+    right: 0px;
+    transform: translateY(-80px);
+  }
+  .detail_first-right_company-by {
+    color: #959595;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0px 0px 30px;
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+  }
+  .text_orange {
+    color: #ee4d2d;
+    display: inline;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+    font-family: Noto Sans;
+  }
+  .label_partner img {
+    width: 90%;
+    opacity: 0.8;
+    transform: translate(14px, -28px);
+  }
+  
+  .detail_second {
+    height: 100%;
+    background-color: #f2f2f2;
+    min-width: 1200px;
+  }
+  .text_menu {
+    color: #cf2127;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    padding: 13px 26px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: "Noto Sans";
+  }
+  .detail_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .detail_second-one {
+    background-color: white;
+    width: 235px;
+    border-color: #ebebeb;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: #464646;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0px 10px 0px 0px;
+    padding: 15px 5px 15px 15px;
+    text-align: left;
+  }
+  .detail_second-two {
+    background-color: white;
+    width: 590px;
+  }
+  .detail_second-three {
+    background-color: white;
+    width: 315px;
+  }
+  .detail_second-one-scrollbar {
+    color: #464646;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: left;
+  }
+  .detail_second-one-scrollbar-item {
+    color: #464646;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 5px 0px;
+    padding: 2px 0px;
+    text-align: left;
+  }
+  .detail_second-one-scrollbar-item:hover {
+    cursor: pointer;
+  }
+  .detail_second-one-scrollbar-item span {
+    /* background-color: #959595; */
+    /* border-radius: 4px; */
+    /* color: #ffffff; */
+    display: inline-block;
+    line-height: 19.5px;
+    padding: 3px 7px 1px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .active {
+    background-color: #959595;
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  .detail_second-two-promote_order {
+    display: flex;
+    background-color: #fbf9d8;
+    border-color: #575757;
+    border-style: dashed;
+    border-width: 1px;
+    color: #464646;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 7.5px 0px;
+    text-align: center;
+    align-items: center;
+  }
+  .detail_second-two-promote_order--voucher img {
+    height: 40px;
+    width: 40px;
+    margin: 13px 13px 13px 13px;
+    transform: translateY(10%);
+  }
