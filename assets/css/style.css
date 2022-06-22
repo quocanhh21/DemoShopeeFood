@@ -122,6 +122,7 @@
   background-image: url(../img/HomePage/background.jpg);
   background-size: cover;
   height: 100vh;
+  position: fixed;
 }
 
 .wrapper__container {
@@ -266,11 +267,11 @@
     color: #ffffff;
     width: 670px;
     height:200px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    overflow: auto;
+
+
+    
+
+    cursor: pointer;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -293,4 +294,9 @@
     height: 400px;
     width:600px;
     border: 1px solid red;
+}
+
+.over-div{
+  width: 680px;
+  transform: translate(260px, 0px);
 }
