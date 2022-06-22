@@ -2,6 +2,12 @@
   display: flex;
   height: 70px;
   background-image: #ffffff;
+  position: fixed;
+  background-color: #FFFFFF;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
 }
 
 .container-header {
@@ -38,7 +44,6 @@
     display: flex;
     justify-content: center;
 }
-
 .header__icon img {
     max-width: 50%;
     margin: auto;
@@ -123,6 +128,7 @@
   background-size: cover;
   height: 100vh;
   position: fixed;
+  top: 70px;
 }
 
 .wrapper__container {
@@ -134,7 +140,7 @@
 .wrapper__container-left {
   color: #ffffff;
   width: 470px;
-  padding-left: 20px;
+  left: 20px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -263,14 +269,15 @@
     background-repeat: no-repeat;
 }
 
+.contain-main-home{
+  position: relative;
+  top: 70px;
+}
+
 .wrapper__container-right {
     color: #ffffff;
     width: 670px;
     height:200px;
-
-
-    
-
     cursor: pointer;
 }
 
@@ -291,12 +298,69 @@
 }
 
 .wrapper__container-right .list-restaurant .title{
-    height: 400px;
+    height: 1680px;
     width:600px;
     border: 1px solid red;
 }
 
 .over-div{
-  width: 680px;
-  transform: translate(260px, 0px);
+  width: 670px;
+  position: relative;
+  float: right;
+  margin-top: 48px;
+  z-index: auto;
+  margin-bottom: 75px;
+}
+
+.row{
+  background-color: #fff;
+    margin-bottom: 20px;
+    padding: 14px 17px 14px 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+    flex-wrap: wrap;
+}
+.row .col1{
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+}
+
+.row .col1 .col1-text{
+  color:#0288d1;
+display:inline;
+font-size:14px;
+font-weight:700;
+line-height:21px;
+text-align:left;
+}
+
+.row .col2 {
+  color:#464646;
+font-size:14px;
+line-height:21px;
+padding:0px 8px;
+text-align:left;
+}
+
+.row .col3 .col3-link{
+  color:#0288d1;
+display:inline;
+font-size:14px;
+line-height:21px;
+padding:0px 8px;
+text-align:left;
+}
+
+.row .col3 .col3-link .col3-icon{
+  color:  #6d6f71;
+  display:  inline-block;
+  font-size:  14px;
+  font-weight:  900;
+  line-height:  14px;
+  text-align:  left;
 }
