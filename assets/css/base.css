@@ -20,7 +20,7 @@ html{
 }
 
 .grid{
-    width: 60%;
+    width: 1200px;
     max-width: 100%;
     margin:0 auto;
 }
@@ -29,7 +29,7 @@ html{
     float: left;
 }
 .col-right{
-    width: 20%;
+    width: calc(100%-20%-1200px);
     float: left;
 }
 .grid__full-width{
