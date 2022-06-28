@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/detail.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/detail.css" />
     <link href="assets/fontawesome/css/all.css" rel="stylesheet" />
     <link rel="shortcut icon" href="assets/img/ShopeeFood_Icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,79 +26,21 @@
         <div class="grid">
           <div class="header__nav">
             <div class="container-header logo col-auto">
-              <img src="./assets/img/logo_shopeefood_homepage.png" alt="" />
+              <img src="./assets/img/Shared/shopeefood_logo.png" alt="" />
             </div>
             <div class="header__nav-location">
-              <div class="dropdown-toggle">TP. HCM</div>
-              <div class="dropdown-menu">
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
-                <div class="dropdown-menu-item">
-                  <span class="name-col">TP. HCM</span>
-                  <span class="count-col">83757 địa điểm</span>
-                </div>
+              <div class="custom-select" action="#" style="width: 100px">
+                <select name="area" id="area">
+                  <option value="tphcm">TP.HCM</option>
+                  <option value="hanoi">Hà Nội</option>
+                  <option value="danang">Đà Nẵng</option>
+                  <option value="cantho">Cần thơ</option>
+                  <option value="haiphong">Hải Phòng</option>
+                </select>
               </div>
             </div>
             <div class="header__nav-main">
-              <a href="#" class="header__nav-main-item">Đồ ăn</a>
+              <a href="#" class="header__nav-main-item main-active">Đồ ăn</a>
               <a href="#" class="header__nav-main-item">Thực phẩm</a>
               <a href="#" class="header__nav-main-item">Bia</a>
               <a href="#" class="header__nav-main-item">Hoa</a>
@@ -112,7 +53,21 @@
                 <button class="button">Đăng nhập</button>
               </div>
               <div class="header__nav-search">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.9628 17.9968C15.3782 19.3459 13.3242 20.16 11.08 20.16C6.06525 20.16 2 16.0947 2 11.08C2 6.06525 6.06525 2 11.08 2C16.0947 2 20.16 6.06525 20.16 11.08C20.16 13.3106 19.3557 15.3533 18.0212 16.934L22.3797 21.2924L21.319 22.3531L16.9628 17.9968ZM18.66 11.08C18.66 15.2663 15.2663 18.66 11.08 18.66C6.89368 18.66 3.5 15.2663 3.5 11.08C3.5 6.89368 6.89368 3.5 11.08 3.5C15.2663 3.5 18.66 6.89368 18.66 11.08Z"
+                    fill="black"
+                    fill-opacity="0.65"
+                  />
+                </svg>
               </div>
             </div>
           </div>
@@ -121,94 +76,96 @@
       </header>
     </div>
     <div class="grid__full-width">
-      <div class="grid detail_first">
-        <div class="detail_first-content">
-          <div class="detail_first-left">
-            <div class="detail_first-left-video">
-              <iframe
-                width="480"
-                height="300"
-                src="https://www.youtube.com/embed/CVfgjyyj9eY"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-          <div class="detail_first-right">
-            <div class="detail_first-right_info">
-              <div class="detail_first-right_info--link">
-                <a href=""
-                  >Home TP. HCM Rules Of Tea - Trà Sữa Đế Vương - Nguyễn Văn
-                  Cừ</a
-                >
-              </div>
-              <div class="detail_first-right_info--type">CAFÉ/DESSERT</div>
-              <div class="detail_first-right_info--name">
-                Rules Of Tea - Trà Sữa Đế Vương - Nguyễn Văn Cừ
-              </div>
-              <div class="detail_first-right_info--address">
-                213D Nguyễn Văn Cừ, P. 3, Quận 5, TP. HCM
-              </div>
-              <div class="detail_first-right_info--star">
-                <div
-                  class="detail_first-right_info--star--stars"
-                  style="color: #e7c63f"
-                >
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
-                </div>
-                <div class="detail_first-right_info--star--vote">
-                  <span class="number-rating">100+</span>
-                </div>
-                <div class="detail_first-right_info--star--onshopee">
-                  Đánh giá trên ShopeeFood
-                </div>
-              </div>
-              <div class="detail_first-right_info--star-more">
-                <a href="">Xem thêm lượt đánh giá từ Foody</a>
-              </div>
-              <div class="detail_first-right_info--opening">
-                <div class="detail_first-right_info--opening--status">
-                  <span class="dot"></span>
-                  <span>Mở cửa</span>
-                </div>
-                <div class="detail_first-right_info--opening--time">
-                  <i class="fa-solid fa-clock"></i>
-                  <span>06:30 - 21:00</span>
-                </div>
-              </div>
-              <div class="detail_first-right_info--cost">
-                <i class="fa-solid fa-dollar-sign"></i>
-                <span>35,000 - 55,000</span>
+      <div class="grid" style="padding-top: 100px">
+        <div class="detail_first">
+          <div class="detail_first-content">
+            <div class="detail_first-left">
+              <div class="detail_first-left-video">
+                <iframe
+                  width="480"
+                  height="300"
+                  src="https://www.youtube.com/embed/CVfgjyyj9eY"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
               </div>
             </div>
-            <div class="detail_first-right_company">
-              <div class="detail_first-right_company-fee">
-                <div class="detail_first-right_company-fee--text">
-                  PHÍ DỊCH VỤ
+            <div class="detail_first-right">
+              <div class="detail_first-right_info">
+                <div class="detail_first-right_info--link">
+                  <a href=""
+                    >Home TP. HCM Rules Of Tea - Trà Sữa Đế Vương - Nguyễn Văn
+                    Cừ</a
+                  >
                 </div>
-                <div
-                  class="detail_first-right_company-fee--percent text_orange"
-                >
-                  0.0% Phí dịch vụ
+                <div class="detail_first-right_info--type">CAFÉ/DESSERT</div>
+                <div class="detail_first-right_info--name">
+                  Rules Of Tea - Trà Sữa Đế Vương - Nguyễn Văn Cừ
                 </div>
-                <div class="label_partner">
-                  <img src="./assets/img/partner.png" alt="" />
+                <div class="detail_first-right_info--address">
+                  213D Nguyễn Văn Cừ, P. 3, Quận 5, TP. HCM
+                </div>
+                <div class="detail_first-right_info--star">
+                  <div
+                    class="detail_first-right_info--star--stars"
+                    style="color: #e7c63f"
+                  >
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </div>
+                  <div class="detail_first-right_info--star--vote">
+                    <span class="number-rating">100+</span>
+                  </div>
+                  <div class="detail_first-right_info--star--onshopee">
+                    Đánh giá trên ShopeeFood
+                  </div>
+                </div>
+                <div class="detail_first-right_info--star-more">
+                  <a href="">Xem thêm lượt đánh giá từ Foody</a>
+                </div>
+                <div class="detail_first-right_info--opening">
+                  <div class="detail_first-right_info--opening--status">
+                    <span class="dot"></span>
+                    <span>Mở cửa</span>
+                  </div>
+                  <div class="detail_first-right_info--opening--time">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>06:30 - 21:00</span>
+                  </div>
+                </div>
+                <div class="detail_first-right_info--cost">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  <span>35,000 - 55,000</span>
                 </div>
               </div>
-              <div class="detail_first-right_company-by">
-                <div class="detail_first-right_company-by--text">
-                  DỊCH VỤ BỞI
+              <div class="detail_first-right_company">
+                <div class="detail_first-right_company-fee">
+                  <div class="detail_first-right_company-fee--text">
+                    PHÍ DỊCH VỤ
+                  </div>
+                  <div
+                    class="detail_first-right_company-fee--percent text_orange"
+                  >
+                    0.0% Phí dịch vụ
+                  </div>
+                  <div class="label_partner">
+                    <img src="./assets/img/partner.png" alt="" />
+                  </div>
                 </div>
-                <div
-                  class="detail_first-right_company-fee--company text_orange"
-                >
-                  ShopeeFood
+                <div class="detail_first-right_company-by">
+                  <div class="detail_first-right_company-by--text">
+                    DỊCH VỤ BỞI
+                  </div>
+                  <div
+                    class="detail_first-right_company-fee--company text_orange"
+                  >
+                    ShopeeFood
+                  </div>
                 </div>
               </div>
             </div>
@@ -264,10 +221,238 @@
               </div>
               <div class="detail_second-two-promote_order--copy"></div>
             </div>
+            <div class="detail_second-two-promote_search">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <input type="text" class="" placeholder="Tìm món" />
+            </div>
+            <div class="detail_second-two-promote_restaurant">
+              <div class="detail_second-two-promote_restaurant-menu-group">
+                <div
+                  class="detail_second-two-promote_restaurant-menu-group_title"
+                >
+                  Trà sữa
+                </div>
+              </div>
+              <div class="detail_second-two-promote_restaurant-item">
+                <div class="detail_second-two-promote_restaurant-item_picture">
+                  <img
+                    src="./assets/img/201891313524-tra-sua-de-vuong.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="detail_second-two-promote_restaurant-item_name">
+                  <div
+                    class="detail_second-two-promote_restaurant-item_name-vn"
+                  >
+                    Trà sữa Đế Vương
+                  </div>
+                  <div
+                    class="detail_second-two-promote_restaurant-item_name-eng"
+                  >
+                    Milk tea King 38
+                  </div>
+                </div>
+                <div class="detail_second-two-promote_restaurant-item_buy">
+                  <div
+                    class="detail_second-two-promote_restaurant-item_buy-cost"
+                  >
+                    <div
+                      class="detail_second-two-promote_restaurant-item_buy-cost-price"
+                    >
+                      35,000
+                    </div>
+                    <span>đ</span>
+                  </div>
+                  <div
+                    class="detail_second-two-promote_restaurant-item_buy-button"
+                  >
+                    <div
+                      class="detail_second-two-promote_restaurant-item_buy-button_adding"
+                    >
+                      <i class="fa-solid fa-square-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="detail_second-two-promote_restaurant-menu-group">
+                <div
+                  class="detail_second-two-promote_restaurant-menu-group_title"
+                >
+                  Trà sữa
+                </div>
+              </div>
+              <div class="detail_second-two-promote_restaurant-item">
+                <div class="detail_second-two-promote_restaurant-item_picture">
+                  <img
+                    src="./assets/img/201891313524-tra-sua-de-vuong.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="detail_second-two-promote_restaurant-item_name">
+                  <div
+                    class="detail_second-two-promote_restaurant-item_name-vn"
+                  >
+                    Trà sữa Đế Vương
+                  </div>
+                  <div
+                    class="detail_second-two-promote_restaurant-item_name-eng"
+                  >
+                    Milk tea King 38
+                  </div>
+                </div>
+                <div class="detail_second-two-promote_restaurant-item_buy">
+                  <div
+                    class="detail_second-two-promote_restaurant-item_buy-cost"
+                  >
+                    <div
+                      class="detail_second-two-promote_restaurant-item_buy-cost-price"
+                    >
+                      35,000
+                    </div>
+                    <span>đ</span>
+                  </div>
+                  <div
+                    class="detail_second-two-promote_restaurant-item_buy-button"
+                  >
+                    <div
+                      class="detail_second-two-promote_restaurant-item_buy-button_adding"
+                    >
+                      <i class="fa-solid fa-square-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="detail_second-two-promote_restaurant-item">
+                <div class="detail_second-two-promote_restaurant-item_picture">
+                  <img
+                    src="./assets/img/201891313524-tra-sua-de-vuong.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="detail_second-two-promote_restaurant-item_name">
+                  <div
+                    class="detail_second-two-promote_restaurant-item_name-vn"
+                  >
+                    Trà sữa Đế Vương
+                  </div>
+                  <div
+                    class="detail_second-two-promote_restaurant-item_name-eng"
+                  >
+                    Milk tea King 38
+                  </div>
+                </div>
+                <div class="detail_second-two-promote_restaurant-item_buy">
+                  <div
+                    class="detail_second-two-promote_restaurant-item_buy-cost"
+                  >
+                    <div
+                      class="detail_second-two-promote_restaurant-item_buy-cost-price"
+                    >
+                      35,000
+                    </div>
+                    <span>đ</span>
+                  </div>
+                  <div
+                    class="detail_second-two-promote_restaurant-item_buy-button"
+                  >
+                    <div
+                      class="detail_second-two-promote_restaurant-item_buy-button_adding"
+                    >
+                      <i class="fa-solid fa-square-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="detail_second-three">zk</div>
+          <div class="detail_second-three"></div>
         </div>
       </div>
     </div>
   </body>
+  <script>
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    /*look for any elements with the class "custom-select":*/
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      ll = selElmnt.length;
+      /*for each element, create a new DIV that will act as the selected item:*/
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      /*for each element, create a new DIV that will contain the option list:*/
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+      for (j = 1; j < ll; j++) {
+        /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function (e) {
+          /*when an item is clicked, update the original select box,
+        and the selected item:*/
+          var y, i, k, s, h, sl, yl;
+          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+          sl = s.length;
+          h = this.parentNode.previousSibling;
+          for (i = 0; i < sl; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+              s.selectedIndex = i;
+              h.innerHTML = this.innerHTML;
+              y = this.parentNode.getElementsByClassName("same-as-selected");
+              yl = y.length;
+              for (k = 0; k < yl; k++) {
+                y[k].removeAttribute("class");
+              }
+              this.setAttribute("class", "same-as-selected");
+              break;
+            }
+          }
+          h.click();
+        });
+        b.appendChild(c);
+      }
+      x[i].appendChild(b);
+      a.addEventListener("click", function (e) {
+        /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-hide");
+        this.classList.toggle("select-arrow-active");
+      });
+    }
+    function closeAllSelect(elmnt) {
+      /*a function that will close all select boxes in the document,
+  except the current select box:*/
+      var x,
+        y,
+        i,
+        xl,
+        yl,
+        arrNo = [];
+      x = document.getElementsByClassName("select-items");
+      y = document.getElementsByClassName("select-selected");
+      xl = x.length;
+      yl = y.length;
+      for (i = 0; i < yl; i++) {
+        if (elmnt == y[i]) {
+          arrNo.push(i);
+        } else {
+          y[i].classList.remove("select-arrow-active");
+        }
+      }
+      for (i = 0; i < xl; i++) {
+        if (arrNo.indexOf(i)) {
+          x[i].classList.add("select-hide");
+        }
+      }
+    }
+    /*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+    document.addEventListener("click", closeAllSelect);
+  </script>
 </html>
