@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/img/Shared/ShopeeFood_Icon.png" />
+    <title>
+      Đặt Đồ Ăn Trực Tuyến Ở 16 Tỉnh Thành Trên Toàn Quốc & Giao Hàng Tận Nơi
+    </title>
+  </head>
+  <body>
+    <div class="grid__full-width">
+      <header class="header">
+        <!-- <div class="header__icon">
+            <img src="assets/img/logo_shopeefood_homepage.png" alt="Logo" />
+          </div> -->
+        <div class="grid">
+          <div class="header__nav">
+            <div class="container-header logo col-auto">
+              <img src="./assets/img/Shared/shopeefood_logo.png" alt="" />
+            </div>
+            <div class="header__nav-location">
+              <div class="custom-select" action="#" style="width: 100px">
+                <select name="area" id="area">
+                  <option value="tphcm">TP.HCM</option>
+                  <option value="hanoi">Hà Nội</option>
+                  <option value="danang">Đà Nẵng</option>
+                  <option value="cantho">Cần thơ</option>
+                  <option value="haiphong">Hải Phòng</option>
+                </select>
+              </div>
+            </div>
+            <div class="header__nav-main">
+              <a href="#" class="header__nav-main-item main-active">Đồ ăn</a>
+              <a href="#" class="header__nav-main-item">Thực phẩm</a>
+              <a href="#" class="header__nav-main-item">Bia</a>
+              <a href="#" class="header__nav-main-item">Hoa</a>
+              <a href="#" class="header__nav-main-item">Siêu thị</a>
+              <a href="#" class="header__nav-main-item">Thuốc</a>
+              <a href="#" class="header__nav-main-item">Thú cưng</a>
+            </div>
+            <div class="header__nav-left">
+              <div class="header__nav-login">
+                <button class="button">Đăng nhập</button>
+              </div>
+              <div class="header__nav-search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.9628 17.9968C15.3782 19.3459 13.3242 20.16 11.08 20.16C6.06525 20.16 2 16.0947 2 11.08C2 6.06525 6.06525 2 11.08 2C16.0947 2 20.16 6.06525 20.16 11.08C20.16 13.3106 19.3557 15.3533 18.0212 16.934L22.3797 21.2924L21.319 22.3531L16.9628 17.9968ZM18.66 11.08C18.66 15.2663 15.2663 18.66 11.08 18.66C6.89368 18.66 3.5 15.2663 3.5 11.08C3.5 6.89368 6.89368 3.5 11.08 3.5C15.2663 3.5 18.66 6.89368 18.66 11.08Z"
+                    fill="black"
+                    fill-opacity="0.65"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__language">Vn</div>
+      </header>
+
+      <div class="grid">
+        <div class="now-search-filter">
+          <div class="nav-filter clearfix">
+            <div class="list-filter">
+              <div class="item-filter">
+                <span class="dropdown-toggle" id="District"> Khu vực </span>
+                <div class="container-box-filter">
+                  <div class="content">
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Quận 1"
+                        id="district 1"
+                      />
+                      <label for="district 1"> Quận 1 </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Gò Vấp"
+                        id="district 2"
+                      />
+                      <label for="district 2"> Gò Vấp </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Quận 2"
+                        id="district 4"
+                      />
+                      <label for="district 4"> Quận 2 </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Quận 3"
+                        id="district 5"
+                      />
+                      <label for="district 5"> Quận 3 </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Quận 4"
+                        id="district 6"
+                      />
+                      <label for="district 6"> Quận 4 </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Quận 5"
+                        id="district 7"
+                      />
+                      <label for="district 7"> Quận 5 </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Quận 6"
+                        id="district 8"
+                      />
+                      <label for="district 8"> Quận 6 </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Quận 7"
+                        id="district 9"
+                      />
+                      <label for="district 9"> Quận 7 </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Quận 8"
+                        id="district 10"
+                      />
+                      <label for="district 10"> Quận 8 </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Quận 9"
+                        id="district 11"
+                      />
+                      <label for="district 11"> Quận 9 </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Quận 10"
+                        id="district 12"
+                      />
+                      <label for="district 12"> Quận 10 </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Quận 11"
+                        id="district 13"
+                      />
+                      <label for="district 13"> Quận 11</label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Quận 12"
+                        id="district 14"
+                      />
+                      <label for="district 14"> Quận 12</label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Bình Thạnh"
+                        id="district 15"
+                      />
+                      <label for="district 15"> Bình Thạnh </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Tân Bình"
+                        id="district 16"
+                      />
+                      <label for="district 16"> Tân Bình </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Phú Nhuận"
+                        id="district 17"
+                      />
+                      <label for="district 17"> Phú Nhuận </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Bình Tân"
+                        id="district 18"
+                      />
+                      <label for="district 18"> Bình Tân </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Tân Phú"
+                        id="district 19"
+                      />
+                      <label for="district 19"> Tân Phú </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Thủ Đức"
+                        id="district 693"
+                      />
+                      <label for="district 693"> Thủ Đức </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Củ Chi"
+                        id="district 694"
+                      />
+                      <label for="district 694"> Củ Chi </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Hóc Môn"
+                        id="district 695"
+                      />
+                      <label for="district 695"> Hóc Môn </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Bình Chánh"
+                        id="district 696"
+                      />
+                      <label for="district 696"> Bình Chánh </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Cần Giờ"
+                        id="district 698"
+                      />
+                      <label for="district 698"> Cần Giờ </label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input
+                        type="checkbox"
+                        data-text="Nhà Bè"
+                        id="district 699"
+                      />
+                      <label for="district 699"> Nhà Bè </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-filter">
+                <span class="dropdown-toggle" id="Category"> Phân loại </span>
+                <div class="container-box-filter">
+                  <div class="content">
+                    <div>
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          data-text="Đồ ăn"
+                          id="category 1000000"
+                        />
+                        <label for="category 1000000"> Đồ ăn </label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          data-text="Đồ uống"
+                          id="category 1000001"
+                        />
+                        <label for="category 1000001"> Đồ uống</label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          data-text="Đồ chay"
+                          id="category 1000002"
+                        />
+                        <label for="category 1000002"> Đồ chay </label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          data-text="Bánh kem"
+                          id="category 1000003"
+                        />
+                        <label for="category 1000003"> Bánh kem </label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          data-text="Tráng miệng"
+                          id="category 1000004"
+                        />
+                        <label for="category 1000004"> Tráng miệng </label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          data-text="Homemade"
+                          id="category 1000005"
+                        />
+                        <label for="category 1000005"> Homemade </label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          data-text="Vỉa hè"
+                          id="category 1000006"
+                        />
+                        <label for="category 1000006"> Vỉa hè </label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          data-text="Pizza/Burger"
+                          id="category 1000007"
+                        />
+                        <label for="category 1000007"> Pizza/Burger </label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          data-text="Món gà"
+                          id="category 1000008"
+                        />
+                        <label for="category 1000008"> Món gà </label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          data-text="Món lẩu"
+                          id="category 1000009"
+                        />
+                        <label for="category 1000009"> Món lẩu </label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          data-text="Sushi"
+                          id="category 1000010"
+                        />
+                        <label for="category 1000010"> Sushi </label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          data-text="Mì phở"
+                          id="category 1000011"
+                        />
+                        <label for="category 1000011"> Mì phở </label>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="custom-checkbox">
+                        <input
+                          type="checkbox"
+                          data-text="Cơm hộp"
+                          id="category 1000012"
+                        />
+                        <label for="category 1000012"> Cơm hộp</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="float-right">
+              <div class="result">200 Kết quả</div>
+              <select class="filter-sort">
+                <option value="8">Đúng nhất</option>
+                <option value="3">Gần tôi</option>
+                <option value="36">Đánh giá</option>
+                <option value="35">Bán chạy</option>
+                <option value="37">Giao nhanh</option>
+              </select>
+            </div>
+          </div>
+          <div class="tag-filter"></div>
+        </div>
+        <div class="now-list-restaurant">
+            <div class="list-restaurant">
+                <div class="item-restaurant">
+                    <a target="_blank" class="item-content" href="/ho-chi-minh/quan-an-com-tam-31-dong-den">
+                        <div class="img-restaurant">
+                            <div class="tag-preferred">
+                                <i class="fa fa-thumbs-up" aria-hidden="true">
+
+                                </i>
+                                Yêu thích
+                            </div>
+                            <img src="https://images.foody.vn/res/g86/859866/prof/s280x175/image-7be4ea8d-200908105702.jpeg" class="">
+                        </div>
+                        <div class="info-restaurant">
+                            <div class="info-basic-res">
+                                <h4 class="name-res" title="Cơm Tấm 31 - Đồng Đen">
+                                    <span class="icon icon-quality-merchant" title="Đây là 1 trong những Merchants được đánh giá cao trong ShopeeFood">
+
+                                    </span>
+                                    Cơm Tấm 31 - Đồng Đen
+                                </h4>
+                                <div class="address-res" title="31 Đồng Đen, P. 12, Tân Bình, TP. HCM">
+                                    31 Đồng Đen, P. 12, Tân Bình, TP. HCM
+                                </div>
+                            </div>
+                            <p class="kind-restaurant"> 
+                                Quán ăn
+                            </p>
+                            <div class="opentime-status">
+                                <span class="stt online" title="Mở cửa" style="color: rgb(35, 152, 57); background-color: rgb(35, 152, 57);">
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <ul class="pagination">
+            <li class="disabled">
+                <a class="" href="#">
+                    <span class="icon icon-paging-pre">
+
+                    </span>
+                </a>
+            </li>
+            <li class="active">
+                <a class="undefined" href="#">
+                    1
+                </a>
+            </li>
+            <li class="">
+                <a class="" href="#">
+                    2
+                </a>
+            </li>
+            <li class="">
+                <a class="" href="#">
+                    3
+                </a>
+            </li>
+            <li class="">
+                <a class="" href="#">
+                    <span class="icon icon-paging-next">
+
+                    </span>
+                </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script>
+    var x, i, j, l, ll, selElmnt, a, b, c;
+    /*look for any elements with the class "custom-select":*/
+    x = document.getElementsByClassName("custom-select");
+    l = x.length;
+    for (i = 0; i < l; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      ll = selElmnt.length;
+      /*for each element, create a new DIV that will act as the selected item:*/
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      /*for each element, create a new DIV that will contain the option list:*/
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+      for (j = 1; j < ll; j++) {
+        /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function (e) {
+          /*when an item is clicked, update the original select box,
+        and the selected item:*/
+          var y, i, k, s, h, sl, yl;
+          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+          sl = s.length;
+          h = this.parentNode.previousSibling;
+          for (i = 0; i < sl; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+              s.selectedIndex = i;
+              h.innerHTML = this.innerHTML;
+              y = this.parentNode.getElementsByClassName("same-as-selected");
+              yl = y.length;
+              for (k = 0; k < yl; k++) {
+                y[k].removeAttribute("class");
+              }
+              this.setAttribute("class", "same-as-selected");
+              break;
+            }
+          }
+          h.click();
+        });
+        b.appendChild(c);
+      }
+      x[i].appendChild(b);
+      a.addEventListener("click", function (e) {
+        /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-hide");
+        this.classList.toggle("select-arrow-active");
+      });
+    }
+    function closeAllSelect(elmnt) {
+      /*a function that will close all select boxes in the document,
+  except the current select box:*/
+      var x,
+        y,
+        i,
+        xl,
+        yl,
+        arrNo = [];
+      x = document.getElementsByClassName("select-items");
+      y = document.getElementsByClassName("select-selected");
+      xl = x.length;
+      yl = y.length;
+      for (i = 0; i < yl; i++) {
+        if (elmnt == y[i]) {
+          arrNo.push(i);
+        } else {
+          y[i].classList.remove("select-arrow-active");
+        }
+      }
+      for (i = 0; i < xl; i++) {
+        if (arrNo.indexOf(i)) {
+          x[i].classList.add("select-hide");
+        }
+      }
+    }
+    /*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+    document.addEventListener("click", closeAllSelect);
+  </script>
+</html>

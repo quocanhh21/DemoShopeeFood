@@ -206,6 +206,7 @@ body{
     margin: auto;
     clear: both;
     padding: 100px 0 30px 0;
+    font-size: 14px;
 }
 
 .now-login .content {
@@ -432,6 +433,7 @@ label{
     margin-bottom: 15px;
     padding: 6px 0;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
 .btn-block {
