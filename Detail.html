@@ -75,7 +75,36 @@
         <div class="header__language">Vn</div>
       </header>
     </div>
+
+    <!-- The Modal -->
     <div class="grid__full-width">
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+          </div>
+          <div class="modal-footer clearfix">
+            <div class="adjust-quantity float-left"> 
+              <button class="btn btn-plus">-</button>
+              <span class="quantity">1</span>
+              <button class="btn btn-minus">+</button>
+            </div>
+            <div class="group-price float-right" >
+              <button class="btn btn-agree">
+                Đồng ý +<span>49,000 đ</span> 
+              </button>
+            </div>
+          </div>
+        </div>
+      
+      </div>
       <div class="grid" style="padding-top: 100px">
         <div class="detail_first">
           <div class="detail_first-content">
@@ -154,7 +183,7 @@
                     0.0% Phí dịch vụ
                   </div>
                   <div class="label_partner">
-                    <img src="./assets/img/partner.png" alt="" />
+                    <img src="./assets/img/DetailPage/partner.png" alt="" />
                   </div>
                 </div>
                 <div class="detail_first-right_company-by">
@@ -214,7 +243,7 @@
           <div class="detail_second-two">
             <div class="detail_second-two-promote_order">
               <div class="detail_second-two-promote_order--voucher">
-                <img src="./assets/img/ImageShopeefood1.svg" alt="" />
+                <img src="./assets/img/DetailPage/ImageShopeefood1.svg" alt="" />
               </div>
               <div class="detail_second-two-promote_order--content">
                 <span>Mã giảm 15% trên giá món</span>
@@ -236,7 +265,7 @@
               <div class="detail_second-two-promote_restaurant-item">
                 <div class="detail_second-two-promote_restaurant-item_picture">
                   <img
-                    src="./assets/img/201891313524-tra-sua-de-vuong.jpg"
+                    src="./assets/img//DetailPage/201891313524-tra-sua-de-vuong.jpg"
                     alt=""
                   />
                 </div>
@@ -269,7 +298,7 @@
                     <div
                       class="detail_second-two-promote_restaurant-item_buy-button_adding"
                     >
-                      <i class="fa-solid fa-square-plus"></i>
+                      <i class="fa-solid fa-square-plus" id="myBtn"></i>
                     </div>
                   </div>
                 </div>
@@ -284,7 +313,7 @@
               <div class="detail_second-two-promote_restaurant-item">
                 <div class="detail_second-two-promote_restaurant-item_picture">
                   <img
-                    src="./assets/img/201891313524-tra-sua-de-vuong.jpg"
+                    src="./assets/img/DetailPage/201891313524-tra-sua-de-vuong.jpg"
                     alt=""
                   />
                 </div>
@@ -317,7 +346,7 @@
                     <div
                       class="detail_second-two-promote_restaurant-item_buy-button_adding"
                     >
-                      <i class="fa-solid fa-square-plus"></i>
+                      <i class="fa-solid fa-square-plus" id="myBtn"></i>
                     </div>
                   </div>
                 </div>
@@ -325,7 +354,7 @@
               <div class="detail_second-two-promote_restaurant-item">
                 <div class="detail_second-two-promote_restaurant-item_picture">
                   <img
-                    src="./assets/img/201891313524-tra-sua-de-vuong.jpg"
+                    src="./assets/img/DetailPage/201891313524-tra-sua-de-vuong.jpg"
                     alt=""
                   />
                 </div>
@@ -358,17 +387,157 @@
                     <div
                       class="detail_second-two-promote_restaurant-item_buy-button_adding"
                     >
-                      <i class="fa-solid fa-square-plus"></i>
+                      <i class="fa-solid fa-square-plus" id="myBtn" ></i>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="detail_second-three"></div>
+          <div class="detail_second-three">
+            <div class="header-cart clearfix">
+              <div class="group-order float-left"> <span>1</span> phần - <span>1</span> người</div>
+              <div class="group-button float-right">
+                <button class="btn btn-group">Nhóm cùng đặt</button>
+                <button class="btn btn-reset">Reset</button>
+              </div>
+            </div>
+            <div class="order">
+              <div class="overview clearfix">
+                <div class="avatar-user float-left"><img src="./assets/img/DetailPage/images.jfif" alt=""></div>
+                <div class="name-user float-left">Quốc Anh</div>
+                <div class="quantity-item float-right">1 món</div>
+              </div>
+              <div class="item">
+                <div class="item-info"> 
+                  <div class="adjust-quantity">
+                    <button class="btn btn-plus">+</button> 
+                    <span>1</span> 
+                    <button class="btn btn-minus">-</button>
+                  </div>
+                  <div class="name-item">Trà Đen Sữa Tươi</div>
+                  <span class="extra-info">50% đá, 100% đường</span>
+                </div>
+                <div class="item-note clearfix">
+                  <div class="text-note float-left">Ghi chú</div>
+                  <div class="price-item float-right">39,000đ</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-info"> 
+                  <div class="adjust-quantity">
+                    <button class="btn btn-plus">+</button> 
+                    <span>1</span> 
+                    <button class="btn btn-minus">-</button>
+                  </div>
+                  <div class="name-item">Trà Đen Sữa Tươi</div>
+                  <span class="extra-info">50% đá, 100% đường</span>
+                </div>
+                <div class="item-note clearfix">
+                  <div class="text-note float-left">Ghi chú</div>
+                  <div class="price-item float-right">39,000đ</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-info"> 
+                  <div class="adjust-quantity">
+                    <button class="btn btn-plus">+</button> 
+                    <span>1</span> 
+                    <button class="btn btn-minus">-</button>
+                  </div>
+                  <div class="name-item">Trà Đen Sữa Tươi</div>
+                  <span class="extra-info">50% đá, 100% đường</span>
+                </div>
+                <div class="item-note clearfix">
+                  <div class="text-note float-left">Ghi chú</div>
+                  <div class="price-item float-right">39,000đ</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-info"> 
+                  <div class="adjust-quantity">
+                    <button class="btn btn-plus">+</button> 
+                    <span>1</span> 
+                    <button class="btn btn-minus">-</button>
+                  </div>
+                  <div class="name-item">Trà Đen Sữa Tươi</div>
+                  <span class="extra-info">50% đá, 100% đường</span>
+                </div>
+                <div class="item-note clearfix">
+                  <div class="text-note float-left">Ghi chú</div> 
+                  <div class="price-item float-right">39,000đ</div>
+                </div>
+              </div>
+            </div>
+              <hr>
+              <div class="price clearfix">
+                <div class="text float-left">Cộng</div>
+                <div class="price-total float-right">39,000đ</div>
+              </div>
+              <hr>
+              <div class="delivery clearfix">
+                <div class="text float-left">Phí vận chuyển (Est.)</div>
+                <div class="delivery-fee float-right "> 10,000đ/km</div>
+              </div>
+              <div class="info">
+                <p> 
+                  <span>(*)</span>
+                  Nhập mã khuyến mãi ở bước hoàn tất</p>
+              </div>
+              <div class="provisional-calculation clearfix">
+                <div class="text float-left">Tạm tính</div>
+                <div class="tmp-money float-right ">39,000đ</div>
+              </div>
+              <div class="last">
+                <button class="btn btn-reserve"> 
+                  <i class="fa-solid fa-circle-check"></i>
+                   Đặt trước
+                  </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="grid__full-width">
+      <footer>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, veniam!
+      </footer>
+    </div>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      var agree = document.getElementsByClassName("group-price")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      agree.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
   </body>
   <script>
     var x, i, j, l, ll, selElmnt, a, b, c;
