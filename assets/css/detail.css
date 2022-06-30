@@ -418,7 +418,7 @@
   margin: 0px 10px 0px 0px;
   padding: 15px 5px 15px 15px;
   text-align: left;
-  height: 1000px;
+  height: 100%;
 }
 .detail_second-two {
   background-color: white;
@@ -659,4 +659,304 @@
   text-align: center;
   width: 22px;
   height: 22px;
+}
+
+/* column 3 ---------------------------------------------------------------*/
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.float-left{
+  float: left !important;
+}
+
+.float-right{
+  float: right !important;
+}
+
+.btn{
+  background-color: #4CAF50;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 6px 5px;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.detail_second-three .header-cart .group-button{
+  line-height: 50px;
+}
+
+.detail_second-three .header-cart .group-button .btn-group{
+  background-color: #003857;
+}
+
+.detail_second-three .header-cart .group-button .btn-reset{
+  margin-right: 10px;
+  background-color: #FFFFFF;
+  color: #cf2127;
+  border: 1px solid #cf2127;
+}
+
+.detail_second-three .header-cart .group-order{
+  color:#0288d1;
+  font-size: 12px;
+  margin: 12px 10px;
+  background-color: #e2e2e2;
+  padding: 2px 8px;
+}
+
+.detail_second-three .header-cart .group-order span{
+  font-weight: 900;
+}
+
+.detail_second-three .order .overview{
+  background-color: #e2e2e2;
+}
+
+.detail_second-three .order .overview .avatar-user{
+  margin: 5px; 
+}
+
+.order .overview .avatar-user img{
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.detail_second-three .order .overview .name-user{
+  line-height: 50px;
+    font-size: 15px;
+}
+
+.detail_second-three .order .overview .quantity-item{
+  line-height: 50px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.detail_second-three .order .item .item-info{
+  margin: 10px 5px;
+}
+
+.detail_second-three .order .item .item-info .adjust-quantity{
+ 
+}
+
+.detail_second-three .order .item .item-info .adjust-quantity .btn-minus{
+  background-color: #505050;
+}
+
+.detail_second-three .order .item .item-info .adjust-quantity span{
+  font-size: 15px;
+  color: #ee4d2d;
+  margin: 0 5px;
+}
+
+.detail_second-three .order{
+  height: 300px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.detail_second-three .order .item .item-info div{
+  display: inline-block;
+  font-size: 15px;
+}
+
+.detail_second-three .order .item .item-note {
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.detail_second-three .order .item .item-note .text-note {
+  color: rgb(199, 199, 199);
+}
+
+.detail_second-three .order .item .item-note .price-item{
+  font-weight: bold;
+}
+
+.detail_second-three .order .item .item-info .name-item{
+  font-weight: bold;
+}
+
+.detail_second-three .order .item .item-info .extra-info{
+    font-size: 12px;
+}
+
+.detail_second-three .order .item .item-info .extra-info::before{
+  content: " - ";
+  font-size: 14px;
+}
+
+.detail_second-three .order .item .item-info .adjust-quantity .btn{
+  padding: 0px 4px;
+  font-size: 16px;
+}
+hr{
+  border-top: 1px solid #f1f1f1;
+}
+.detail_second-three .price{
+  font-size: 14px;
+  margin: 8px 5px;
+}
+
+.detail_second-three .price .price-total{
+  font-weight: bold;
+}
+
+.detail_second-three .delivery{
+  font-size: 14px;
+  margin: 8px 5px;
+}
+
+.detail_second-three .info{
+  background-color: #fbf9d8;
+  text-align: center;
+  font-size: 14px;
+  padding: 6px 10px;
+}
+
+.detail_second-three .info span{
+  color: #ee4d2d;
+}
+
+.detail_second-three .provisional-calculation{
+  font-size: 14px;
+  margin: 8px 5px;
+}
+
+.detail_second-three .provisional-calculation .tmp-money{
+  color: #005380;
+  font-weight: bold;
+}
+
+.detail_second-three .last{
+  margin: 10px 10px;
+}
+
+.detail_second-three .last button{
+  width: 100%; 
+  background-color: #ee4d2d;
+}
+
+.detail_second-three .last i{
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+/* popup modal--------------------------------------------------------------------------- */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  top: 200px;
+  background-color: #fefefe;
+  width: 1000px;
+  left: 450px;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #ebe8e8;;
+  color: white;
+}
+
+.modal-footer .adjust-quantity{
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px;
+}
+.modal-footer .group-price{
+  line-height: 60px;
+}
+
+.modal-footer .group-price button{
+  font-size: 16px;
+  padding: 8px 50px;
+}
+
+.modal-footer .adjust-quantity span{
+  border: 1px solid rgb(204, 204, 204);
+  padding: 2px 6px;
+  margin: 0 10px;
+  color: #000;
+  background-color: #FFFFFF;
+}
+
+.modal-footer .adjust-quantity button{
+  padding: 4px 6px;
+  font-size: 16px;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {top: -300px; opacity: 0}
+  to {top: 200px; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
 }
