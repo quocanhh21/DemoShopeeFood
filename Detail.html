@@ -82,19 +82,145 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-          <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>Modal Header</h2>
+          <div class="modal-header clearfix">
+            <!-- <span class="close">&times;</span> -->
+            <div class="img-item float-left"><img src="./assets/img/DetailPage/201891313524-tra-sua-de-vuong.jpg" alt=""></div>
+            <div class="info-item float-left">
+              <div class="item-name"><h2>Trà xanh Gong Cha</h2></div>
+              <div class="item-description"> <p>Gong Cha milk foam green tea</p></div>
+              <div class="item-price"><p>Giá: 43,000 đ</p></div>
+            </div>
           </div>
+
+          <div style="margin: 0 20px;">
+            <hr>
+          </div>
+         
           <div class="modal-body">
-            <p>Some text in the Modal Body</p>
-            <p>Some other text...</p>
+            <div class="option">
+              <div class="option-title">
+                <h2>Chọn size 
+                  <span> (Bắt buộc chọn 1 loại)</span>
+                </h2>
+              </div>
+              <div class="option-item clearfix">
+                <div class="item float-left">
+                  <div class="box">
+
+                  </div>
+                  <div class="text">
+                    <p>Size S</p>
+                  </div>
+                </div>
+                <div class="item float-left">
+                  <div class="box">
+
+                  </div>
+                  <div class="text">
+                    <p>Size M</p>
+                  </div>
+                </div>
+                <div class="item float-left">
+                  <div class="box">
+
+                  </div>
+                  <div class="text">
+                    <p>Size L</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <hr>
+              </div>
+            </div>
+            <div class="option">
+              <div class="option-title">
+                <h2>Chọn đường
+                  <span> (Bắt buộc chọn 1 loại)</span>
+                </h2>
+              </div>
+              <div class="option-item clearfix">
+                <div class="item float-left">
+                  <div class="box">
+
+                  </div>
+                  <div class="text">
+                    <p>10% đường</p>
+                  </div>
+                </div>
+                <div class="item float-left">
+                  <div class="box">
+
+                  </div>
+                  <div class="text">
+                    <p>20% đường</p>
+                  </div>
+                </div>
+                <div class="item float-left">
+                  <div class="box">
+
+                  </div>
+                  <div class="text">
+                    <p>30% đường</p>
+                  </div>
+                </div>
+                <div class="item float-left">
+                  <div class="box">
+
+                  </div>
+                  <div class="text">
+                    <p>40% đường</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="option">
+              <div class="option-title">
+                <h2>Chọn đường
+                  <span> (Bắt buộc chọn 1 loại)</span>
+                </h2>
+              </div>
+              <div class="option-item clearfix">
+                <div class="item float-left">
+                  <div class="box">
+
+                  </div>
+                  <div class="text">
+                    <p>10% đường</p>
+                  </div>
+                </div>
+                <div class="item float-left">
+                  <div class="box">
+
+                  </div>
+                  <div class="text">
+                    <p>20% đường</p>
+                  </div>
+                </div>
+                <div class="item float-left">
+                  <div class="box">
+
+                  </div>
+                  <div class="text">
+                    <p>30% đường</p>
+                  </div>
+                </div>
+                <div class="item float-left">
+                  <div class="box">
+
+                  </div>
+                  <div class="text">
+                    <p>40% đường</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="modal-footer clearfix">
             <div class="adjust-quantity float-left"> 
-              <button class="btn btn-plus">-</button>
+              <button class="btn btn-minus">-</button>
               <span class="quantity">1</span>
-              <button class="btn btn-minus">+</button>
+              <button class="btn btn-plus">+</button>
             </div>
             <div class="group-price float-right" >
               <button class="btn btn-agree">
@@ -298,7 +424,7 @@
                     <div
                       class="detail_second-two-promote_restaurant-item_buy-button_adding"
                     >
-                      <i class="fa-solid fa-square-plus" id="myBtn"></i>
+                      <i class="fa-solid fa-square-plus" id="1"></i>
                     </div>
                   </div>
                 </div>
@@ -346,7 +472,7 @@
                     <div
                       class="detail_second-two-promote_restaurant-item_buy-button_adding"
                     >
-                      <i class="fa-solid fa-square-plus" id="myBtn"></i>
+                      <i class="fa-solid fa-square-plus" id="2"></i>
                     </div>
                   </div>
                 </div>
@@ -387,7 +513,7 @@
                     <div
                       class="detail_second-two-promote_restaurant-item_buy-button_adding"
                     >
-                      <i class="fa-solid fa-square-plus" id="myBtn" ></i>
+                      <i class="fa-solid fa-square-plus" id="3" ></i>
                     </div>
                   </div>
                 </div>
@@ -515,21 +641,31 @@
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
 
-      var agree = document.getElementsByClassName("group-price")[0];
-      
+      var matches = document.querySelectorAll("i.fa-square-plus");
+
+      // console.log(matches.forEach(function(match){
+      //   match.id;
+      // }));
+      console.log(matches);
+
       // When the user clicks the button, open the modal 
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
+      // btn.onclick = function() {
+      //   modal.style.display = "block";
+      // }
       
       // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
+      // span.onclick = function() {
+      //   modal.style.display = "none";
+      // }
 
-      agree.onclick = function() {
-        modal.style.display = "none";
-      }
+      matches.forEach(function(match) {
+
+        match.addEventListener('click', function() {
+  modal.style.display="block";
+  var idElm= match.getAttribute("id");
+  console.log(idElm);
+})
+})
       
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {

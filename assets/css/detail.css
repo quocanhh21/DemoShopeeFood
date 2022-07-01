@@ -513,7 +513,7 @@
   padding: 15px;
   padding-left: 28px;
   line-height: 10px;
-  z-index: 999;
+  z-index: 1;
 }
 .detail_second-two-promote_restaurant {
   width: 558px;
@@ -857,9 +857,9 @@ hr{
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
+  display: block; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 2; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -879,7 +879,7 @@ hr{
   top: 200px;
   background-color: #fefefe;
   width: 1000px;
-  left: 450px;
+  left: 550px;
   animation-name: slideIn;
   animation-duration: 0.4s
 }
@@ -900,12 +900,52 @@ hr{
 }
 
 .modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
+  margin: 20px;
+  background-color: #FFFFFF;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-header .img-item img{
+  width: 100px;
+  height: 100px;
+}
+
+.modal-header .info-item {
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.modal-header .info-item .item-description{
+  color: rgba(0,0,0, .6);
+}
+
+
+
+.modal-body {
+  margin: 0 20px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.modal-body .option .option-title span{
+  font-weight: 100;
+}
+
+.modal-body .option .option-item .item{
+  width: 50%;
+}
+
+.modal-body .option .option-item .item .box{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-body .option .option-item .item .text{
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 10px;
+}
 
 .modal-footer {
   padding: 2px 16px;
@@ -918,6 +958,19 @@ hr{
   font-size: 16px;
   margin: 15px;
 }
+
+.modal-footer .adjust-quantity .btn-minus{
+  background-color: #505050;
+}
+
+.modal-footer .adjust-quantity .btn-plus{
+  background-color:#ee4d2d;
+}
+
+.modal-footer .btn-agree{
+  background-color:#ee4d2d;
+}
+
 .modal-footer .group-price{
   line-height: 60px;
 }
@@ -940,6 +993,8 @@ hr{
   font-size: 16px;
 }
 
+
+
 /* Add Animation */
 @-webkit-keyframes slideIn {
   from {bottom: -300px; opacity: 0} 
@@ -960,3 +1015,4 @@ hr{
   from {opacity: 0} 
   to {opacity: 1}
 }
+
