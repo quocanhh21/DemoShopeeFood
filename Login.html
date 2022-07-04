@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/img/ShopeeFood_Icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="grid__full-width">
+      <header class="header">
+        <!-- <div class="header__icon">
+          <img src="assets/img/logo_shopeefood_homepage.png" alt="Logo" />
+        </div> -->
+        <div class="grid">
+          <div class="header__nav">
+            <div class="container-header logo col-auto">
+              <img src="./assets/img/Shared/shopeefood_logo.png" alt="" />
+            </div>
+            <div class="header__nav-location">
+              <div class="custom-select" action="#" style="width: 100px">
+                <select name="area" id="area">
+                  <option value="tphcm">TP.HCM</option>
+                  <option value="hanoi">Hà Nội</option>
+                  <option value="danang">Đà Nẵng</option>
+                  <option value="cantho">Cần thơ</option>
+                  <option value="haiphong">Hải Phòng</option>
+                </select>
+              </div>
+            </div>
+            <div class="header__nav-main">
+              <a href="#" class="header__nav-main-item main-active">Đồ ăn</a>
+              <a href="#" class="header__nav-main-item">Thực phẩm</a>
+              <a href="#" class="header__nav-main-item">Bia</a>
+              <a href="#" class="header__nav-main-item">Hoa</a>
+              <a href="#" class="header__nav-main-item">Siêu thị</a>
+              <a href="#" class="header__nav-main-item">Thuốc</a>
+              <a href="#" class="header__nav-main-item">Thú cưng</a>
+            </div>
+            <div class="header__nav-left">
+              <div class="header__nav-login">
+                <button class="button">Đăng nhập</button>
+              </div>
+              <div class="header__nav-search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.9628 17.9968C15.3782 19.3459 13.3242 20.16 11.08 20.16C6.06525 20.16 2 16.0947 2 11.08C2 6.06525 6.06525 2 11.08 2C16.0947 2 20.16 6.06525 20.16 11.08C20.16 13.3106 19.3557 15.3533 18.0212 16.934L22.3797 21.2924L21.319 22.3531L16.9628 17.9968ZM18.66 11.08C18.66 15.2663 15.2663 18.66 11.08 18.66C6.89368 18.66 3.5 15.2663 3.5 11.08C3.5 6.89368 6.89368 3.5 11.08 3.5C15.2663 3.5 18.66 6.89368 18.66 11.08Z"
+                    fill="black"
+                    fill-opacity="0.65"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__language">Vn</div>
+      </header>
+      <div class="now-login">
+        <div class="content"><div class="title">Đăng nhập</div><div class="login-via"><div class="item phone"><span class="fas fa-mobile-alt"></span>Số điện thoại</div><div class="item fb"><span class="fab fa-facebook-f"></span>Facebook</div><form id="google-login-form" action="https://accounts.google.com/o/oauth2/v2/auth" method="GET"><input type="hidden" name="client_id" value="229327170580-69v69v4s94p2tvf4qi3g0qb901b2pg99.apps.googleusercontent.com"><input type="hidden" name="redirect_uri" value="https://shopeefood.vn/account/login"><input type="hidden" name="scope" value="email profile openid"><input type="hidden" name="state" value="/"><input type="hidden" name="response_type" value="permission id_token"><input type="hidden" name="fetch_basic_profile" value="true"><input type="hidden" name="nonce" value="dlyJoFtTKQMs_H7Cru18rSfwd6a9ErpO"><div class="item plus"><i class="fab fa-google-plus-g"></i>Google</div></form></div><p class="text">Hoặc đăng nhập bằng tài khoản của bạn</p><div class="form-login-input"><div class="field-group"><div class="input-group"><i class="far fa-envelope"></i><input type="text" placeholder="Tên đăng nhập hoặc Email" value=""></div><div class="input-group"><i class="fas fa-lock"></i><input type="password" placeholder="Mật khẩu" value=""></div></div><div class="form-group clearfix"><div class="float-left"><input type="checkbox" id="RememberMe" checked=""><label for="RememberMe">Lưu thông tin đăng nhập</label></div><span class="float-right"><a href="/forgotPassword">Quên mật khẩu?</a></span></div><button class="btn btn-block btn-submit">Đăng nhập</button></div><br><div class="login-mess-policy">Chúng tôi không sử dụng thông tin của bạn với bất kỳ mục đích nào. Bằng cách đăng nhập hoặc đăng ký, bạn đồng ý với <a style="color: #0495ba; border-bottom: 2px solid; text-decoration: none !important;" target="_blank" href="https://shopeefood.vn/gioi-thieu#footer-bottom">Chính sách quy định của Foody</a></div></div></div>
+    </div>
+
+    <div class="grid__full-width">
+      <div class="grid" style="padding-top: 100px">
+        <div class="detail_first">
+         
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
