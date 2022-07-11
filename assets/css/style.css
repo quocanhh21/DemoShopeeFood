@@ -130,8 +130,11 @@ body{
   background-image: url(../img/HomePage/background.jpg);
   background-size: cover;
   height: 100vh;
+  position: fixed;
+  top: 70px;
+  /* js here
   position: absolute;
-  top: 1300px;
+  top: 1300px; */
 }
 
 .wrapper__container {
@@ -171,6 +174,13 @@ body{
   line-height: 21px;
   padding: 27px 0px 40px;
   text-align: left;
+}
+
+.wrapper__container-left .category-list-filter .category-item:hover {
+  text-decoration: none;
+  color: #252525;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .wrapper__container-left .search-form .input-group {
@@ -313,7 +323,7 @@ body{
   width: 670px;
   position: relative;
   float: right;
-  margin-top: 48px;
+  margin-top: 120px;
   z-index: auto;
   margin-bottom: 75px;
   height: unset;
@@ -868,7 +878,6 @@ border: none;
   box-shadow: 0 2px 2px 0 rgb(50 50 50 / 10%);
   padding: 20px 150px 50px;
   border-radius: 4px;
-  margin-top: 60px;
   position: relative;
 }
 

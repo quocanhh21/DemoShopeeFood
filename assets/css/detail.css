@@ -857,7 +857,7 @@ hr{
 
 /* The Modal (background) */
 .modal {
-  display: block; /* Hidden by default */
+  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 2; /* Sit on top */
   left: 0;
@@ -867,8 +867,6 @@ hr{
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
   animation-duration: 0.4s
 }
@@ -1014,5 +1012,384 @@ hr{
 @keyframes fadeIn {
   from {opacity: 0} 
   to {opacity: 1}
+}
+
+.modalConfirm{
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+.modalConfirm .btn{
+  background-color: rgb(2, 151, 265);
+}
+
+.confirm-content{
+  position: fixed;
+  top: 100px;
+  background-color: #fefefe;
+  width: 1100px;
+  left: 400px;
+  animation-name: slideInC;
+  animation-duration: 0.4s
+}
+
+@keyframes slideInC {
+  from {top: -300px; opacity: 0}
+  to {top: 100px; opacity: 1}
+}
+
+
+.modalConfirm .confirm-content .confirm-header{
+ margin: 6px 10px;
+ border-bottom: 1px solid rgba(219, 219, 219);
+}
+
+.modalConfirm .confirm-content .confirm-header i{
+  vertical-align: middle;
+}
+
+.modalConfirm .confirm-content .confirm-header .text{
+  font-size: 18px;
+  font-weight: bold;
+   line-height: 40px;
+}
+
+.modalConfirm .confirm-content .confirm-header .but .btn{
+  font-size: 14px;
+}
+
+.modalConfirm .confirm-content .confirm-header .but i{
+  color: #FFFFFF;
+  width: 18px;
+}
+
+.modalConfirm .confirm-content .confirm-detail .col1{
+  width: 45%;
+ 
+  border-right: 10px solid rgba(219, 219, 219);
+}
+
+.modalConfirm .confirm-content .confirm-detail .col1 .info-service h2{
+  display: inline-block;
+  background-color: rgba(0,0,0,0.7);
+  margin: 8px 0 0 8px;
+  color: #FFFFFF;
+  font-size: 17px;
+  border-radius: 2px;
+  padding: 3px 8px;
+}
+
+.modalConfirm .confirm-content .confirm-detail .col1 .info-service {
+ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.address-delivery {
+  margin-left: 10px;
+}
+
+.address-delivery .description p{
+  white-space: nowrap; 
+  width: 485px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  font-size: 12px;
+    font-weight: 100;
+    margin: 0 0 0 32px ;
+}
+
+.address-delivery .inf::before{
+  content:"\A";
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background: none;
+  display:inline-block;
+  margin:0 10px;
+}
+
+.address-delivery .send .inf::before{
+  background: red;
+}
+
+.address-delivery .receive .inf::before{
+  background: rgb(0, 206, 0);
+}
+
+.address-delivery h3{
+  font-size: 14px;
+  margin: 10px 0 0 0;
+  display: inline-block;
+}
+
+.col1 .infor-expected{
+  display: inline-block;
+  background-color: #fbf9d8;
+  border-radius: 30px;
+  border: 1px solid black;
+  margin-left: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+.col1 .infor-expected .fa-solid{
+  color: #bebebe;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.col1 .infor-expected h3{
+  display: inline-block;
+  margin:5px 2px 5px 2px;
+}
+
+.col1 .change-info{
+  font-size: 14px;
+  margin: 12px;
+
+}
+
+.col1 .change-info .text{
+  color: rgb(2, 151, 265);
+  font-weight: 600;
+}
+
+.col1 .change-info .fa-solid{
+  color: rgba(219, 219, 219)
+}
+
+.col2{
+  width: 55%;
+  padding: 0 0 0 0;
+}
+
+.col2 .title .text{
+  font-size: 12px;
+  margin: 0 0 0 10px;
+}
+
+.col2 .title i{
+  color: rgba(219, 219, 219);
+}
+
+.col2 .list-item .item .float-left div {
+  display: inline-block;
+}
+
+.col2 .list-item .item .float-left .item-optional{
+  color: rgba(0,0,0, 0.5);
+}
+
+.col2 .title .text h2{
+  margin: 0;
+}
+
+.col2 .list-item{
+  max-height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}
+
+.col2 .list-item .item{
+  margin: 5px 5px 0 10px;
+  font-size: 14px;
+}
+
+.col2 .list-item .item .item-name p{
+  font-weight: 600;
+  margin-bottom: 0 !important;
+}
+
+.col2 .list-item .item .item-quantity{
+  background-color: rgb(2, 151, 265);
+  height: 20px;
+  width: 20px;
+  color: white;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+
+.col2 .list-item .item .item-quantity span{
+  padding-left: 5px;
+}
+
+.col2 .list-item .item .item-price{
+ margin-top: 10px;
+  font-size: 16px;
+}
+
+.col2 hr{
+  border-top: 5px solid #fbf9d8;
+}
+
+.col2 .total{
+  padding-left: 5px;
+    padding-right: 20px;
+    font-size: 16px;
+}
+
+.col2 .total .text{
+  color: rgba(0,0,0, 0.7);
+}
+
+.col2 .total p{
+ margin: 0;
+}
+
+.col2 .total .text span{
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+ }
+
+ .col2 .total .total-price{
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+ }
+ 
+ .col2 .delivery{
+  padding-left: 5px;
+    padding-right: 20px;
+    font-size: 16px;
+    color: rgba(0,0,0, 0.7);
+}
+
+.col2 .delivery .fa-solid{
+  color:#bebebe;
+}
+
+.col2 .delivery .text{
+  margin: 5px 0 0 0;
+}
+
+.col2 .delivery .text span{
+  color: red;
+}
+
+.col2 .delivery .total-fee{
+  margin: 5px 0 0 0;
+}
+
+.col2 .voucher{
+  padding-left: 5px;
+  padding-right: 20px;
+    font-size: 16px;
+    color: rgba(0,0,0, 0.7);
+}
+
+.col2 .voucher .text{
+  margin: 5px 0 0 0;
+  display: inline-block;
+}
+
+.col2 .voucher{
+  margin-top: 5px;
+  background-color: #fbf9d8;
+}
+
+.col2 .voucher input{
+  margin-left: 30px;
+  width: 100px;
+}
+
+.col2 .voucher button{
+  background-color: rgb(0, 206, 0);
+  border-radius: 3px;
+}
+
+.col2 .temp-calc{
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 20px;
+    font-size: 16px;
+}
+
+.col2 .payment-method{
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 20px;
+    font-size: 16px;
+    background-color: #fbf9d8;
+}
+
+.col2 .payment-method .method-change{
+  font-weight: 100;
+  color: rgb(2, 151, 265);
+}
+
+.col2 .payment-method .method-change i{
+  color: #bebebe;
+}
+
+.col2 .note input:focus::placeholder {
+  color: transparent;
+}
+
+.col2 .note input{
+  outline: none;
+  border: none;
+  padding: 8px 15px;
+  font-size: 15px;
+  width: 500px;
+}
+
+.col2 .vat {
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 20px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.col2 .vat img{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.col2 .vat p{
+  display: inline-block;
+  margin: 0;
+}
+
+.confirm-content .but {
+  margin: 10px;
+}
+
+.confirm-content .but button{
+  margin: 0 !important;
+  width: 100%;
+  color: #FFFFFF;
+  position: relative;
+  font-size: 16px;
+  border-radius: 7px;
+}
+
+.confirm-content .but button .fa-solid{
+  color: #FFFFFF;
+  vertical-align: middle;
+}
+.confirm-content .but button p{
+  display: inline-block;
+  font-weight: bold;
+}
+
+.confirm-content .but button .total-price{
+  position: absolute;
+  right: 10px;
 }
 
