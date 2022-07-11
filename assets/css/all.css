@@ -457,5 +457,274 @@ option {
 }
 
   /* now-list-restaurant */
+  .now-list-restaurant {
+    border-radius: 6px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.now-list-restaurant .list-restaurant {
+  margin: 0 -10px;
+  position: relative;
+}
+
+.now-list-restaurant .list-restaurant:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.now-list-restaurant .item-restaurant {
+  width: 20%;
+  padding: 10px;
+  float: left;
+}
+
+.now-list-restaurant .item-content {
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #fff;
+  position: relative;
+  display: block;
+  color: #0288d1;
+    text-decoration: none;
+}
+
+.now-list-restaurant .img-restaurant {
+  position: relative;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  height: 137px;
+  background: #eaeaea;
+}
+
+.now-list-restaurant .item-restaurant .tag-preferred {
+  text-transform: none;
+  position: absolute;
+  background: #f13233;
+  color: #fff;
+  bottom: 5px;
+  left: 7px;
+  z-index: 1;
+  padding: 3px 5px;
+}
+
+.now-list-restaurant .item-restaurant .tag-preferred i {
+  padding-left: 2px;
+  padding-right: 5px;
+}
+
+.fa-thumbs-up:before {
+  content: "\f164";
+}
+
+.now-list-restaurant .img-restaurant img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  vertical-align: middle;
+  border-style: none;
+}
+
+.now-list-restaurant .info-restaurant {
+  border: 1px solid #d7d7d7;
+  border-radius: 0 0 6px 6px;
+  height: 94px;
+}
+
+.now-list-restaurant .info-basic-res {
+  padding: 5px 8px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.now-list-restaurant .info-basic-res p{
+  margin-top: 0;
+    padding: 0 0 0 8px;
+}
+
+.now-list-restaurant .info-basic-res h4{
+  margin-top: 0;
+}
+
+.now-list-restaurant .info-restaurant .name-res {
+  font-size: 14px;
+  font-weight: 700;
+  color: #252525;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 1px;
+  padding-top: 5px;
+}
+
+.now-list-restaurant .info-restaurant .icon-quality-merchant {
+  vertical-align: bottom;
+}
+
+.icon-quality-merchant, .icon-quality-merchant-medi {
+  background-image: url(../img/All/partner2x.png);
+  background-size: cover;
+}
+
+.icon-quality-merchant {
+  margin-right: 2px;
+  margin-bottom: 3px;
+  width: 17px;
+  height: 17px;
+}
+
+.now-list-restaurant .info-restaurant .address-res {
+  font-size: 12px;
+  color: #959595;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.now-list-restaurant .content-promotion {
+  font-size: 13px;
+  color: #187caa;
+  font-weight: 700;
+  padding: 8px 8px 5px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fa-tag, .now-list-restaurant .content-promotion .fas {
+  padding-right: 5px;
+}
+
+.now-list-restaurant .content-promotion .fas {
+  color: #cf2127;
+}
+
+.fa-tag:before {
+  content: "\f02b";
+}
+
+.opentime-status {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: 1;
+}
+
+.opentime-status:after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+.opentime-status .online {
+  background-color: #6cc942;
+  color: #329900;
+}
+
+.opentime-status .stt {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.now-list-restaurant .kind-restaurant {
+  font-size: 12px;
+  color: #959595;
+  text-transform: uppercase;
+  padding: 6px 8px;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 
   /* pagination */
+
+  .pagination {
+    text-align: center;
+    margin-top: 30px;
+    max-height: 30px;
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    padding-inline-start: 40px;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.pagination a {
+  font-size: 13px;
+  border-radius: 2px;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #252525;
+  display: inline-block;
+  margin: 0 5px;
+  position: relative;
+  top: -1px;
+  cursor: pointer;
+  transition: .2s;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.icon {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.pagination .icon {
+  vertical-align: middle;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.icon-paging-pre {
+  width: 18px;
+  height: 18px;
+  background-position: -196px -60px;
+}
+
+.icon-paging-pre{
+background-image: url(../img/All/ImageShopeefood01.png);
+}
+
+.pagination li.active a {
+  background-color: #cf2127;
+  color: #fff;
+}
+
+.icon-paging-next{
+  background-image: url(../img/All/ImageShopeefood01.png);
+  }
+
+  .icon-paging-next {
+    width: 18px;
+    height: 18px;
+    background-position: -196px -93px;
+}
